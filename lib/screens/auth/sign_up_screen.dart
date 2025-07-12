@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sm_assignment1/widget/password.dart';
@@ -90,6 +91,7 @@ class SignUpScreen extends GetView<AuthController> {
                       hint: 'Enter new password',
                       visibility: controller.isConfirmPasswordVisible,
                       textController: controller.signupPasswordController,
+                      onChanged: controller.updatePasswordStrength,
                       validator: (val) =>
                       val == null || val.length < 6 ? 'Minimum 6 characters required' : null,
                     ),
@@ -129,5 +131,3 @@ class SignUpScreen extends GetView<AuthController> {
     );
   }
 }
-
-

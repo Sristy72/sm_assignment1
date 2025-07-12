@@ -125,9 +125,9 @@ class AuthController extends GetxController {
       final hasNumbers = password.contains(RegExp(r'[0-9]'));
       final hasSpecials = password.contains(RegExp(r'[!@#$%^&*(),.?":{}|<>]'));
 
-      if (hasLetters && hasNumbers && hasSpecials && password.length >= 8) {
+      if (hasLetters && hasNumbers && hasSpecials && password.length >= 6) {
         strength = 1.0;
-      } else if (hasLetters && hasNumbers && password.length >= 8) {
+      } else if (hasLetters && hasNumbers && password.length >= 6) {
         strength = 0.75;
       }
     }
