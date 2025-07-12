@@ -13,7 +13,7 @@ class textButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton(
       onPressed: onPressed,
-      child:  Text(text, style: style ?? TextStyle(color: Colors.grey[600]),),
+      child:  Text(text, style: style?? TextStyle(color: Colors.grey[600]),),
     );
   }
 }

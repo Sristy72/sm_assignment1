@@ -16,7 +16,7 @@ class EdulineApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       theme: ThemeData(
-        scaffoldBackgroundColor: Color(0xFFF8F8F8) // ✅ Set your global background color here
+        scaffoldBackgroundColor: Color(0xFFF8F8F8)
       ),
       title: 'Eduline',
       debugShowCheckedModeBanner: false,

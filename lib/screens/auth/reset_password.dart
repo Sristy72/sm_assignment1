@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 import 'package:sm_assignment1/widget/password.dart';
 import '../../controller/auth_controller.dart';
 import '../../constants/app_texts.dart';
-import '../../utils/validator.dart';
 import '../../widget/button.dart';
 import '../../widget/texts.dart';
 import '../../widget/back_button.dart';

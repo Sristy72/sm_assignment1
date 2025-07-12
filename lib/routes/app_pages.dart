@@ -3,7 +3,6 @@ import 'package:sm_assignment1/screens/auth/sign_up_screen.dart';
 import 'package:sm_assignment1/screens/auth/verify_code.dart';
 import 'package:sm_assignment1/screens/enable_location.dart';
 import 'package:sm_assignment1/screens/splash/splash_screen.dart';
-import '../bindings/onboarding_binding.dart';
 import '../screens/auth/forgot_password.dart';
 import '../screens/auth/reset_password.dart';
 import '../screens/auth/sign_in_screen.dart';
@@ -17,7 +16,6 @@ class AppPages {
     GetPage(
       name: AppRoutes.onboarding,
       page: () => OnboardingScreen(),
-      binding: OnboardingBinding(),
     ),
     GetPage(name: AppRoutes.signin, page: () => SignInScreen()),
     GetPage(name: AppRoutes.signup, page: () => const SignUpScreen()),

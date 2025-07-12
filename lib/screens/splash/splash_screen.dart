@@ -2,23 +2,18 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:get/get.dart';
-
-import 'package:sm_assignment1/widget/dots_indicator.dart';
-
 import '../../constants/app_texts.dart';
 import '../../routes/app_routes.dart';
 import '../../widget/texts.dart';
-import '../on_boarding/onboarding_screen.dart';
 
 class Splash1 extends StatelessWidget {
   const Splash1({super.key});
 
   @override
   Widget build(BuildContext context) {
-    bool _loading = true;
 
     Future.delayed(const Duration(seconds: 3), () {
-      Get.offNamed(AppRoutes.onboarding); // 👈 Direct screen navigation
+      Get.offNamed(AppRoutes.onboarding);
     });
 
     return Scaffold(
