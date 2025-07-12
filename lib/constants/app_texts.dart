@@ -29,7 +29,7 @@ class AppTexts {
   static const passText = 'Password';
   static const nameText = 'Full Name';
 
-  static const passwordMsg = 'At least 8 characters with a combination of letters and numbers';
+  static const passwordMsg = 'At least 6 characters with a combination of letters and numbers';
 
   static const theoryText = "New to Theory Test?";
   static const alreadyText= "Already have an account?";

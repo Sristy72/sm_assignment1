@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:sm_assignment1/widget/texts.dart';
 
 import '../controller/language_controller.dart';
 import '../model/language_model.dart';
@@ -8,7 +9,7 @@ import '../widget/button.dart';
 import '../widget/languagetile.dart';
 
 class LanguageSelectionScreen extends StatelessWidget {
-  const LanguageSelectionScreen({Key? key}) : super(key: key);
+  const LanguageSelectionScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -27,12 +28,12 @@ class LanguageSelectionScreen extends StatelessWidget {
               alignment: Alignment.center,
               child: const CustomBackButton(),
             ),
-            const Text(
+            const CustomText(
               'What is Your Mother Language',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8),
-            const Text(
+            const CustomText(
               'Discover what is a podcast description and podcast summary.',
               style: TextStyle(color: Colors.grey, fontSize: 14),
             ),
