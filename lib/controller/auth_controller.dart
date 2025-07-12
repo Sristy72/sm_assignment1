@@ -100,8 +100,7 @@ class AuthController extends GetxController {
   }
 
   void resendCode() {
-    // 📨 Put your actual resend API logic here
-    debugPrint("🔁 Code resent automatically");
+    debugPrint("Code resent automatically");
     // You could show a snackbar or toast if needed
     // Get.snackbar("Code Sent", "A new verification code has been sent.");
   }
